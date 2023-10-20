@@ -92,7 +92,10 @@ class DashboardPostController extends Controller
     // halaman untuk menghapus postingan
     public function destroy(Post $post)
     {
-        //
+        Post::destroy($post->id);
+
+        // untuk kembali halaman posts dashboard dan mengirimkan success dengan session
+        return redirect('/dashboard/posts')-> with('success', 'Post has been deleted');
     }
 
     public function checkSlug(Request $request)

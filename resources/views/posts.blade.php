@@ -30,21 +30,12 @@
 {{-- membuat foto (kartu) --}}
 <div class="card mb-3">
     {{-- API UNTUK FOTO AGAR OTOMATIS --}}
-    <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }}" class="card-img-top" alt="{{ $posts[0]->category->name }}">
     <div class="card-body text-center">
         {{-- mengarahkan ke posts slug & mengambil dari posts title --}}
-      <h3 class="card-title"><a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">{{ $posts[0]->title }}</a></h3>
       <p>
         <small class="text-muted">
           {{-- mmemasuki link posts author username --}}
-            By : <a href="/posts?author={{ $posts[0]->author->username }}" class="text-decoration-none">
-              {{-- mengambil nama author dari posts author --}}
-            {{$posts[0]->author->name}}</a>
             {{-- memasuki link posts category slug --}}
-            in <a href="/posts?category={{$posts[0]->category->slug}}
-             {{-- mengambil posts category name --}}
-             "class="text-decoration-none">{{ $posts[0]->category->name }}</a>
-             {{-- postingan terakhir pada waktu ... --}}
              {{ $posts[0]->created_at->diffForHumans() }}</small></p>
       <p class="card-text">{{ $posts[0]->excerpt }}</p>
     

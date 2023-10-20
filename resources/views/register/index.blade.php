@@ -6,7 +6,7 @@
   <div class="col-lg-5">
     {{-- form --}}
     <main class="form-registration">
-      <h1 class="h3 mb-3 fw-normal text-center">Formulir Pendaftaran</h1>
+      <h1 class="h3 mb-3 fw-normal text-center">Daftar Akun</h1>
       <form action="/register" method="post">
         {{-- csrf untuk menjaga keamanan --}}
         @csrf
@@ -51,9 +51,9 @@
           @enderror
         </div>
     
-        <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Register</button>
+        <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Daftar</button>
       </form>
-      <small class="d-block text-center mt-3">Sudah daftar? <a href="/login">Yuk login sekarang juga!!</a></small>
+      <small class="d-block text-center mt-3">Sudah mempunyai akun ? <a href="/login">Masuk</a></small>
     </main>
   </div>
 </div>

@@ -43,7 +43,7 @@
     
         <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
       </form>
-      <small class="d-block text-center mt-3">Sudah daftar belum? <a href="/register">Daftar sekarang juga!!</a></small>
+      <small class="d-block text-center mt-3">Belum punya akun ? <a href="/register">Daftar Sekarang</a></small>
     </main>
   </div>
 </div>

@@ -18,8 +18,8 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about', [
-        "name" => "Afdhika Syahputra",
-        "email" => "afdhikasyahputra@gmail.com",
+        "name" => "Putra Afriansyah",
+        "email" => "putraafriansyah@gmail.com",
         "img" => "dhika.jpg",
         "title" => "About",
         "active" => 'about'
@@ -75,3 +75,5 @@ Route::resource('/dashboard/posts', DashboardPostController::class)->middleware(
 //         'posts' => $author->posts->load('category', 'author'),
 //     ]);
 // });
+
+
